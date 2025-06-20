@@ -1,0 +1,51 @@
+   
+   
+   /* Custom styles for a more polished look */
+   body {
+       font-family: 'Inter', sans-serif;
+       background-color: #111827;
+       /* Tailwind gray-900 */
+   }
+
+   /* Gradient text effect */
+   .gradient-text {
+       background-image: linear-gradient(to right, #818cf8, #c084fc);
+       /* Indigo-300 to Purple-400 */
+       -webkit-background-clip: text;
+       background-clip: text;
+       color: transparent;
+   }
+
+   /* Custom focus styles for the input */
+   .custom-input:focus {
+       outline: none;
+       border-color: #a78bfa;
+       /* Purple-400 */
+       box-shadow: 0 0 0 3px rgba(192, 132, 252, 0.2);
+   }
+
+   /* Animation for result display */
+   @keyframes fadeInScaleUp {
+       from {
+           opacity: 0;
+           transform: scale(0.9);
+       }
+
+       to {
+           opacity: 1;
+           transform: scale(1);
+       }
+   }
+
+   .animate-result {
+       animation: fadeInScaleUp 0.5s ease-out forwards;
+   }
+
+   /* Glassmorphism effect for the card */
+   .glass-card {
+       background: rgba(31, 41, 55, 0.6);
+       /* gray-800 with opacity */
+       backdrop-filter: blur(10px);
+       -webkit-backdrop-filter: blur(10px);
+       border: 1px solid rgba(255, 255, 255, 0.1);
+   }
